@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(http://cdn.jsdelivr.net/gh/floriankarsten/space-grotesk@1.1.6/fonts/webfont/SpaceGrotesk-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(http://cdn.jsdelivr.net/gh/floriankarsten/space-grotesk@1.1.6/fonts/webfont/SpaceGrotesk-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(http://cdn.jsdelivr.net/gh/floriankarsten/space-grotesk@1.1.6/fonts/webfont/SpaceGrotesk-Bold.woff2) format("woff2");
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.center-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-login {
+  background-color: #5dd9c1;
+  height: 100vh;
+}
+
+.bg-signup {
+  background-color: #b084cc;
+  height: 100vh;
+}
+
+.login-form-container {
+  margin: 2rem;
+  background-color: #fff;
+  padding: 5rem 2rem;
+  border: 2px solid #b084cc;
+  border-radius: 2rem;
+}
+
+.login-form button {
+  width: 100%;
+}
