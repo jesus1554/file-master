@@ -33,6 +33,11 @@ body {
     line-height: 1.7;
 }
 
+.btn {
+    @extend button;
+    background-color: $yellow;
+}
+
 .center-center {
     display: flex;
     justify-content: center;
@@ -69,3 +74,70 @@ body {
     padding: 2rem;
 }
 
+.dashboard {
+    display: flex;
+}
+
+.dash-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    background-color: #fff;
+    height: 10vh;
+    img {
+        height: 9vh;
+        margin: auto;
+        padding: 1rem;
+    }
+    border-bottom: 1px solid #f7f7fa;
+}
+
+.actual {
+    background-color: transparentize($color: $azul, $amount: 0.8);
+    border-left: 4px solid $azul;
+
+    color: $azul;
+}
+
+.aside-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    a {
+        color: #5c616c;
+        i {
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+.link-aside {
+    padding: 2rem;
+    color: #5c616c;
+}
+
+.dash-content {
+    background-color: #f7f7fa;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.dash-header {
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    * {
+        margin: 0;
+    }
+    h2 {
+        margin: auto 2rem;
+    }
+    a {
+        font-size: 4rem;
+        color: $dark-purple;
+        margin: auto 3rem;
+    }
+}

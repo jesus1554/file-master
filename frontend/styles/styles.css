@@ -28,6 +28,10 @@ body {
   line-height: 1.7;
 }
 
+.btn {
+  background-color: #FFB41F;
+}
+
 .center-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,6 +72,95 @@ body {
   padding: 2rem;
 }
 
-.login-form button {
+.login-form button, .login-form .btn {
   width: 100%;
+}
+
+.dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dash-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  background-color: #fff;
+  height: 10vh;
+  border-bottom: 1px solid #f7f7fa;
+}
+
+.logo img {
+  height: 9vh;
+  margin: auto;
+  padding: 1rem;
+}
+
+.actual {
+  background-color: rgba(93, 217, 193, 0.2);
+  border-left: 4px solid #5dd9c1;
+  color: #5dd9c1;
+}
+
+.aside-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+}
+
+.aside-links a {
+  color: #5c616c;
+}
+
+.aside-links a i {
+  padding-right: 1.5rem;
+}
+
+.link-aside {
+  padding: 2rem;
+  color: #5c616c;
+}
+
+.dash-content {
+  background-color: #f7f7fa;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.dash-header {
+  height: 10vh;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dash-header * {
+  margin: 0;
+}
+
+.dash-header h2 {
+  margin: auto 2rem;
+}
+
+.dash-header a {
+  font-size: 4rem;
+  color: #190933;
+  margin: auto 3rem;
 }
