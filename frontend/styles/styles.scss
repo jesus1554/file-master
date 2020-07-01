@@ -40,26 +40,32 @@ body {
 }
 
 .bg-login {
-    background-color: $azul;
+    background: linear-gradient(145deg, $azul 0%, $azul-claro 100%);
     height: 100vh;
 }
 
 .bg-signup {
-    background-color: $morado;
+    background: linear-gradient(145deg, $morado 0%, $morado-darker 100%);
     height: 100vh;
 }
 
 .login-form-container {
-    margin: 2rem;
+    width: 50%;
     background-color: #fff;
-    padding: 5rem 2rem;
+    // padding: 5rem 2rem;
     border: 2px solid $morado;
     border-radius: 2rem;
+    @media (max-width: 870px) {
+        width: 90%;
+    }
 }
 
 .login-form {
     button {
         width: 100%;
     }
+    // width: 50%;
+    margin: auto;
+    padding: 2rem;
 }
 
