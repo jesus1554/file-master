@@ -231,8 +231,40 @@ body {
     i {
         padding: 1rem;
         margin: auto 0.4rem;
-        color: $morado;
-        border: 2px solid $morado;
         border-radius: 1rem;
     }
+}
+.view-icon {
+    color: $azul;
+    border: 2px solid $azul;
+    border-color: $azul;
+}
+
+.download-icon {
+    color: $morado-darker;
+    border-color: $morado-darker;
+    border: 2px solid $morado-darker;
+}
+.delete-icon {
+    color: $pink;
+    border-color: $pink;
+    border: 2px solid $pink;
+}
+
+.upload-box {
+    border: 2px solid $dark-purple;
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img {
+        height: 40vh;
+    }
+}
+
+.testt {
+    content: 'Hola';
+    display: block;
 }
