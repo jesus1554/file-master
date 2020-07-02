@@ -123,6 +123,7 @@ body {
     color: #5c616c;
 }
 
+
 .dash-content {
     background-color: #f7f7fa;
     width: 100%;
@@ -199,5 +200,39 @@ body {
             color: $azul;
         }
 
+    }
+}
+// File list
+
+.file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.label-file {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+        color: $morado;
+        font-size: 2.5rem;
+        margin: auto 1.2rem;
+    }
+}
+.actions-file {
+    display: flex;
+    justify-content: space-around;
+    i {
+        padding: 1rem;
+        margin: auto 0.4rem;
+        color: $morado;
+        border: 2px solid $morado;
+        border-radius: 1rem;
     }
 }

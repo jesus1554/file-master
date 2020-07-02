@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jesus1554/lina-css@0.1/lina.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>File Master</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="dash-aside">
+            <header class="logo"><img src="/frontend/img/logo.svg" alt="File Master Logo"></header>
+            <nav class="aside-links">
+                <a href="dashboard.html" class="link-aside" id="inicio"><i class="fas fa-home"></i> Home</a>
+
+                <a href="upload.html" class="link-aside" id="upload"><i class="fas fa-upload"></i> Subir Archivos</a>
+
+                <a href="files.html" class="link-aside" id="files"><i class="fas fa-folder"></i> Archivos</a>
+
+                <a href="server.html" class="link-aside" id="server"><i class="fas fa-server"></i> Servidor</a>
+
+                <a href="utilities.html" class="link-aside" id="utilities"><i class="fas fa-wrench"></i> Utilidades</a>
+
+                <a href="wifi.html" class="link-aside" id="wifi"><i class="fas fa-wifi"></i> Wi-Fi</a>
+            </nav>
+        </aside>
+        <main class="dash-content">
+            <header class="dash-header">
+                <h2>Subir Archivos</h2>
+                <a href="profile.html"><i class="fas fa-user"></i></a>
+            </header>
+            <section class="container-dash">
+                
+
+            </section>
+        </main>
+    </div>
+</body>
+<script>
+    'use strict';
+    const url = window.location.href;
+    const strActual = url.split('/')
+    const elements = [{
+            name: "dashboard.html",
+            id: "#inicio"
+        },
+        {
+            name: "upload.html",
+            id: "#upload"
+        },
+        {
+            name: "files.html",
+            id: "#files"
+        },
+        {
+            name: "server.html",
+            id: "#server"
+        },
+        {
+            name: "utilities.html",
+            id: "#utilities"
+        }
+    ]
+    const actual = strActual[strActual.length - 1];
+
+    for (let el in elements) {
+        if (actual === elements[el].name) {
+            //console.log(elements[el].id)
+            const link = document.querySelector(elements[el].id)
+            link.classList.add('actual')
+            //console.log(link)
+        }
+    }
+
+</script>
+
+</html>
