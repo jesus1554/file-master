@@ -33,12 +33,69 @@
                 <h2>Home</h2>
                 <a href="profile.html"><i class="fas fa-user"></i></a>
             </header>
-            <section class="container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita magnam obcaecati tempora eveniet inventore aliquid qui velit quia possimus adipisci.</p>
+            <section class="container-dash">
+                <div class="grid-3">
+                    <div class="widget">
+                        <div class="text-widget">
+                            <h5>Archivos</h5>
+                            <p>24</p>
+                        </div>
+                        <div class="icon-widget">
+                            <i class="fas fa-copy"></i>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="text-widget">
+                            <h5>Temperatura</h5>
+                            <p>53°</p>
+                        </div>
+                        <div class="icon-widget">
+                            <i class="fas fa-thermometer-three-quarters"></i>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="text-widget">
+                            <h5>Usuarios</h5>
+                            <p>4</p>
+                        </div>
+                        <div class="icon-widget">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="widget">
+                        <div class="text-widget disk-dash-chart">
+                            <h5>Capacidad Del Disco</h5>
+                            <label><i class="fas fa-square"></i> Ocupado: 73%</label>
+                            <label><i class="fas fa-square"></i> Libre: 27%</label>
+                        </div>
+                        <div class="chart">
+                            <canvas id="myChart" width="150" height="150"></canvas>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="text-widget">
+                            <h5>Velocidad De Internet</h5>
+                            <p>9.2 <b>mb/s</b></p>
+                        </div>
+                        <div class="icon-widget">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <section class="container">
+                    <h1 class="txt-center">Últimos Archivos</h1>
+                    
+                </section>
+
             </section>
         </main>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script>
     'use strict';
     const url = window.location.href;
@@ -68,12 +125,47 @@
 
     for (let el in elements) {
         if (actual === elements[el].name) {
-            console.log(elements[el].id)
+            //console.log(elements[el].id)
             const link = document.querySelector(elements[el].id)
             link.classList.add('actual')
-            console.log(link)
+            //console.log(link)
         }
     }
+
+    // Chart.js
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    var myDoughnutChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Ocupado', 'Libre'],
+            backgroundColor: "rgba(159,170,174,0.8)",
+            datasets: [
+                {
+                    backgroundColor: ['#b084cc', '#5dd9c1'],
+                    data: [73, 27]
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            legend: {
+               display: false,
+               labels: {
+                    fontColor: "black",
+                    fontSize: 18
+                }
+            }
+       },
+        //options: options
+        labels: [
+        'Red',
+        'Yellow',
+    ]
+    });
+    
+
 </script>
 
 </html>

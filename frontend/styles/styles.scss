@@ -78,6 +78,11 @@ body {
     display: flex;
 }
 
+.container-dash {
+    width: 95%;
+    margin: 1rem auto;
+}
+
 .dash-aside {
     display: flex;
     flex-direction: column;
@@ -95,8 +100,8 @@ body {
 }
 
 .actual {
-    background-color: transparentize($color: $azul, $amount: 0.8);
-    border-left: 4px solid $azul;
+    background-color: transparentize($color: $morado, $amount: 0.8);
+    border-left: 4px solid $morado;
 
     color: $azul;
 }
@@ -139,5 +144,60 @@ body {
         font-size: 4rem;
         color: $dark-purple;
         margin: auto 3rem;
+    }
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin: 1rem auto;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    margin: 2rem auto;
+}
+
+// Widget
+.widget {
+    background-color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.text-widget {
+    h5 {
+        font-weight: 700;
+    }
+    p {
+        font-size: 3.5rem;
+        margin: 0;
+    }
+}
+
+.icon-widget {
+    i {
+        font-size: 7rem;
+        text-align: center;
+        margin: auto auto;
+        height: 99%;
+        color: $morado;
+    }
+}
+
+.disk-dash-chart{ 
+    label {
+        display: block;
+        color: $morado;
+        &:last-of-type {
+            color: $azul;
+        }
+
     }
 }
