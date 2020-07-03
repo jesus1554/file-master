@@ -232,6 +232,15 @@ body {
   color: #5dd9c1;
 }
 
+.ram-dash-chart label {
+  display: block;
+  color: #190933;
+}
+
+.ram-dash-chart label:last-of-type {
+  color: #F1046F;
+}
+
 .file {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,9 +329,4 @@ body {
 
 .upload-box img {
   height: 40vh;
-}
-
-.testt {
-  content: 'Hola';
-  display: block;
 }

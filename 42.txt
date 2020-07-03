@@ -1,0 +1,14 @@
+Server template Brief:
+
+*Disco usado
+*Uso de Ram
+
+*Archivos alojados
+*Temperatura del server
+*Usuarios
+
+*Dirección Ip (Local)
+*Sesiones Activas
+
+*Versión de File Master
+*Link issues GitHub

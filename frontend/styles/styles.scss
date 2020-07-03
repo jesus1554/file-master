@@ -202,6 +202,18 @@ body {
 
     }
 }
+
+.ram-dash-chart{ 
+    label {
+        display: block;
+        color: $dark-purple;
+        &:last-of-type {
+            color: $pink;
+        }
+
+    }
+}
+
 // File list
 
 .file {
@@ -264,7 +276,4 @@ body {
     }
 }
 
-.testt {
-    content: 'Hola';
-    display: block;
-}
+
